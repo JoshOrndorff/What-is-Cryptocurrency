@@ -24,6 +24,15 @@
     <p>For the best experience please use the latest <b>Chromium</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#timeline">Timeline</a>
+  <a href="#demo">Demo</a>
+  <a href="#altcoins">Altcoins</a>
+  <a href="#whitepaper">Whitepaper</a>
+  <a href="#economics">Economics</a>
+</nav>
+
 <div id="impress" data-transition-duration="1000">
 
 <!--
@@ -31,7 +40,7 @@
 -->
 <div id="what-is-bitcoin" class="step title" data-x="0" data-y="0" data-z="1">
   <div class="fade-present">
-    <h1 id="what-is">What is</h1>
+    <h2 class="what-is">What is</h2>
     <div id="author">
       <p>Joshy Orndorff</p>
       <p>09 May 2018</p>
@@ -44,13 +53,16 @@
     Cryptocurrency step
 -->
 <div id="what-is-cryptocurrency" class="step" data-x="0" data-y="10"  data-z="-100" data-scale="8">
-  <h1 id="cryptocurrency">What is Cryptocurrency?</h1>
+  <h2 class="fade-present">What is</h2>
+  <h1 id="cryptocurrency">Cryptocurrency</h1>
   <!-- TODO Get enigma and dollar bill graphics -->
 
   <img src="images/bitcoin.png" alt="bitcoin" class="coin bitcoin" />
   <img src="images/ethereum.png" alt="ethereum" class="coin ethereum" />
   <img src="images/zcash.png" alt="z-cash" class="coin zcash" />
   <img src="images/monero.png" alt="monero" class="coin monero" />
+  <img src="images/bitcoincash.png" alt="bitcoin cash" class="coin bitcoin-cash" />
+  <img src="images/litecoin.png" alt="litecoin" class="coin litecoin" />
   <!-- TODO Get more coins -->
 </div>
 
@@ -65,56 +77,150 @@
 <!--
     Timeline step
 -->
-<div id="timeline" class="step  markdown" data-x="4000" data-y="8000" data-scale="8">
-# Timeline
-* Great depression October 29, 1929 Black Tuesday
-* Depegging to gold 1933 removed aright to demand gold
-* Abandon gold price entirely 1971
-* 2008 crash
-* Whitepaper 2008
-* Genesis block (published 9 Jan 2009)
-> The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
-* Litecoin (oct 2011)
-* Silk Road (Oct 2013 -- Ross Ulbright arrested)
-* Mt Gox (Feb 2014 -- filed for bankruptcy)
-* Ethereum (mainnet launched July 2015)
-* The DAO (June 2016)
-* Bitcoin Cash (august 1st 2017)
+<div id="timeline" class="step" data-x="2000" data-y="12000" data-scale="7">
+  <h1>Timeline</h1>
+  <div id="line">
+    <div class="year">1930</div>
+    <div class="year">1940</div>
+    <div class="year">1950</div>
+    <div class="year">1960</div>
+    <div class="year">1970</div>
+    <div class="year">1980</div>
+    <div class="year">1990</div>
+    <div class="year">2000</div>
+    <div class="year">2008</div>
+    <div class="year">2010</div>
+    <div class="year">2012</div>
+    <div class="year">2014</div>
+    <div class="year">2016</div>
+    <div class="year">2018</div>
+    <div class="year">2020</div>
+  </div>
 </div>
+
+<div id="timeline-depression" class="step  markdown timeline-step" data-rel-x="-1700" data-rel-y="-100" data-scale="3">
+  <h1>Great Depression</h1>
+  October 29, 1929 Black Tuesday
+</div>
+
+<div id="timeline-depeg" class="step  markdown timeline-step" data-rel-x="700" data-rel-y="0" data-scale="3">
+  <h1>Depegging Gold</h1>
+  1933 Citizens no longer have the right to demand gold for currency
+</div>
+
+<div id="timeline-abandon" class="step  markdown timeline-step" data-rel-x="3500" data-scale="3">
+  <h1>Abandon Gold</h1>
+  1971 abandoned gold entirely
+</div>
+
+<div id="timeline-2008" class="step  markdown timeline-step" data-scale="3" data-rel-x="2700">
+  <h1>2008 crash</h1>
+  Insert details
+</div>
+
+<div id="timeline-whitepaper" class="step  markdown timeline-step timeline-step-high" data-scale="3" data-rel-x="300" data-rel-y="-2000">
+  <h1>Whitepaper</h1>
+  Fall 2008
+</div>
+
+<div id="timeline-genesis" class="step  markdown timeline-step" data-rel-x="500" data-rel-y="2000" data-scale="3">
+  <h1>Genesis Block</h1>
+  Genesis block (published 9 Jan 2009)
+  The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
+</div>
+
+<div id="timeline-altcoins" class="step  markdown timeline-step timeline-step-high" data-rel-x="2000" data-rel-y="-2000" data-scale="3">
+  <h1>Altcoins</h1>
+  Litecoin (oct 2011)
+</div>
+
+
+<div id="timeline-silkroad" class="step  markdown timeline-step" data-rel-x="700" data-rel-y="2000" data-scale="3">
+  <h1>The Silk Road</h1>
+  (Oct 2013 -- Ross Ulbright arrested)
+</div>
+
+
+<div id="timeline-mtgox" class="step  markdown timeline-step" data-rel-y="-2000" data-rel-x="500" data-scale="3">
+  <h1>Mt Gox Hack</h1>
+  Feb 2014 -- filed for bankruptcy
+  Korpelles photo
+
+  My pet peave: ambiguous use of the word hack
+</div>
+
+<div id="timeline-ethereum" class="step  markdown timeline-step" data-rel-y="2000" data-scale="3">
+  <h1>Ethereum</h1>
+  mainnet launched July 2015
+
+  First smart contracts
+  Code is law
+</div>
+
+<div id="timeline-dao" class="step  markdown timeline-step" data-rel-y="-2000" data-scale="3">
+  <h1>The DAO Hack</h1>
+  June 2016
+</div>
+
+<div id="timeline-bch" class="step  markdown timeline-step" data-rel-y="2000" data-scale="3">
+  <h1>Bitcoin Cash Fork</h1>
+  August 1st 2017
+</div>
+
 
 <!--
     Demo step
 -->
-<div id="Demo" class="step " data-x="-6000" data-y="7000" data-scale="8">
+<div id="demo" class="step " data-x="-5000" data-y="7000" data-scale="8">
   <h1>Demo</h1>
-  <img src="images/jaxx.png" alt="jaxx-logo" class="coin jaxx" />
-
-
+  <img src="images/jaxx.png" alt="jaxx logo" class="jaxx-logo" />
+  <a href="jaxx.io" target="_blank">
+    <p>Download Jaxx wallet</p>
+  </a>
 </div>
 
 <!--
     Demo sub-steps (Jaxx steps)
 -->
-<div id="jaxx1" class="step  jaxx-step" data-scale="4" data-rel-x="0">
-  <h2>Step 1</h2>
+<div id="jaxx1" class="step  jaxx-step" data-scale="3" data-rel-x="-2500">
+  <h2>Permissions</h2>
   <img  src="images/jaxx1.png"  />
 </div>
 
-<div id="jaxx2" class="step  jaxx-step" data-scale="4" data-rel-x="600">
-  <h2>Step 2</h2>
+<div id="jaxx2" class="step  jaxx-step" data-scale="3" data-rel-x="1200">
+  <h2>Privacy</h2>
   <img  src="images/jaxx1.png"  />
 </div>
 
-<div id="jaxx3" class="step  jaxx-step" data-scale="4" data-rel-x="600">
-  <h2>Step 3</h2>
+<div id="jaxx3" class="step  jaxx-step" data-scale="3">
+  <h2>Create Wallet</h2>
   <img  src="images/jaxx1.png"  />
 </div>
 
+<div id="jaxx4" class="step  jaxx-step" data-scale="3">
+  <h2>Chose Coins</h2>
+  <img  src="images/jaxx1.png"  />
+</div>
+
+<div id="jaxx5" class="step  jaxx-step" data-scale="3" data-rel-x="-3100" data-rel-y="2200">
+  <h2>Receiving</h2>
+  <img  src="images/jaxx1.png"  />
+</div>
+
+<div id="jaxx6" class="step  jaxx-step" data-scale="3" data-rel-x="1200" data-rel-y="0">
+  <h2>Sending</h2>
+  <img  src="images/jaxx1.png"  />
+</div>
+
+<div id="jaxx7" class="step  jaxx-step" data-scale="3">
+  <h2>Security</h2>
+  <img  src="images/jaxx1.png"  />
+</div>
 
 <!--
     Altcoins step
 -->
-<div id="altcoins" class="step  markdown" data-x="4000" data-y="8000" data-scale="8">
+<div id="altcoins" class="step  markdown" data-x="-8000" data-y="0" data-rotate="-6" data-scale="7">
 # Altcoins
 * Litecoin
     * Just change the POW
@@ -133,8 +239,9 @@
 <!--
     Whitepaper step
 -->
-<div id="whitepaper" class="step  markdown" data-x="4000" data-y="8000" data-scale="8">
-* Whitepaper
+<div id="whitepaper" class="step  markdown" data-x="11000" data-y="1900" data-rotate="6" data-scale="7">
+# Whitepaper
+* Public / Private key
 * Trustless
 * Mining
 * Signatures
@@ -143,44 +250,53 @@
 <!--
     Adoption and Applications step
 -->
-<div id="adoption" class="step  markdown" data-x="4000" data-y="8000" data-scale="8">
+<div id="adoption" class="step  markdown" data-x="10000" data-y="10000" data-rotate="10" data-scale="7">
 # Adoption and Applications
 * Bit Pesa
 * Donations to Venezuela
-
-# Point of Sales systems
+* Companies
+* Graphs
+* Point of Sales systems -- for your business
 </div>
 
 <!--
     Smart Contracts step
 -->
-<div id="contracts" class="step  markdown" data-x="4000" data-y="8000" data-scale="8">
+<div id="contracts" class="step  markdown" data-x="-12000" data-y="8000" data-rotate="-5" data-scale="7">
 # Smart Contracts
 ## Games
 * Cryptokitties
 * Casinos
-
-## Infrastructure
 * ENS
 * Exchanges (0x)
+* diplomas
+* voting
+* Prism
 </div>
 
 <!--
     Politics and philosophy step
 -->
-<div id="philosophy" class="step  markdown" data-x="4000" data-y="8000" data-scale="8">
+<div id="philosophy" class="step  markdown" data-x="4000" data-y="8500" data-rotate="5" data-scale="7">
+#Philosophy
 * Totally transparent monetary policy
 * Code is law
+* Libertarian-ism
+* Cipherpunks
 * Criminals?
 </div>
 
 <!--
     Economics step
 -->
-<div id="economics" class="step  markdown" data-x="4000" data-y="8000" data-scale="8">
+<div id="economics" class="step  markdown" data-x="10000" data-y="5000" data-rotate="-7" data-scale="7">
 # Economics
-* Trading
-  * gdax demo
+* Bitcoin Price graph
+  * log
+  * linear
+* Screenshots
+  * gdax
+  * coin market cap
 * ICOs
 * Regulations
 * Taxes
@@ -189,10 +305,13 @@
 <!--
     About me step
 -->
-<div id="about" class="step  markdown" data-x="4000" data-y="8000" data-scale="8">
+<div id="about" class="step  markdown" data-x="3000" data-y="5500" data-scale="6" data-rotate="5">
+# About Me
 * Joshy Orndorff
 * Donation addresses?
-* website
+* [My personal website](https://joshyorndorff.com)
+* [These slides](https://joshyorndorff.com/what-is-cryptocurrency)
+
 </div>
 
 

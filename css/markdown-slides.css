@@ -27,64 +27,6 @@
     display: none;
 }
 
-/***** Per slide hack examples (Delete or comment when all done) *****/
-
-div#step-4 > p:last-child {
-    margin-top: 150px;
-    font-size: 0.5em;
-    text-align: right;
-}
-
-div#tilted-slide {
-    text-shadow: 20px 20px 10px rgba(0, 0, 0, .4);
-}
-div#tilted-slide h1 {
-    margin-top: 200px;
-}
-
-/******* What is Bitcoin Step ********/
-#what-is-bitcoin {
-  position: relative;
-  left: 10em;
-  top: -3em;
-}
-.bitcoin-long {
-  position: absolute;
-  left: 400px;
-  top: 150px;
-}
-
-#author {
-  position: absolute;
-  top: 400px;
-  left: 600px;
-  text-align: right;
-}
-
-/*********** Cryptocurrency Step ******/
-
-.past #cryptocurrency {
-  font-size: 5em;
-  transition: 2s;
-}
-.coin {position: absolute; z-index:-1;}
-.bitcoin {left: 180px; top: 180px;}
-.ethereum{left: -100px; top: 200px;}
-.zcash{left: 600px; top: 400px;}
-.monero{left: 700; top: 400px;}
-
-/********** Overview Step **********/
-
-/********* Demo Steps **************/
-.jaxx {
-  right: 200px;
-  top: 40px;
-  width: 4em;
-}
-
-
-
-
 /***** Presentation *****/
 
 body {
@@ -98,12 +40,12 @@ body {
     position: relative;
     width: 900px;
     height: 700px;
-    padding: 40px 60px;
+    padding: 0;
     margin: 20px auto;
 
-    box-sizing:         border-box;
+    box-sizing: border-box;
 
-    color: rgb(102, 102, 102);
+    color: rgb(72, 72, 72);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
     font-family: serif;
     font-size: 30px;
@@ -129,7 +71,6 @@ h1,
 h2,
 h3 {
     margin-bottom: 0.5em;
-    margin-top: 0.5em;
     text-align: center;
 }
 
@@ -139,12 +80,6 @@ p {
 
 li {
     margin: 0.2em;
-}
-
-/* Highlight.js used for coloring pre > code blocks. */
-pre > code {
-    font-size: 14px;
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 /* Inline code, no Highlight.js */
@@ -194,28 +129,143 @@ strike {
 
 img {
     width: 300px;
-    margin-left:   40px;
-    margin-right:   0px;
-    margin-top:    20px;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 
-/*
-    Specific styles for: .title steps
-*/
 
-.title h1,
-.title h2,
-.title h3 {
-    position: absolute;
-    left: 45px; /* slide width is 900px, so this is like a 5% margin on both sides */
-    width: 90%;
-    text-align: center;
+
+
+
+/***** Floating nav ********/
+nav {
+  z-index: 99;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  position: fixed;
+  left: 0;
+  top: 20px;
+  background: rgba(150, 150, 150, .8);
+  padding-right: 8px;
 }
-.title h1 { top: 50px; }
-.title h2 { top: 400px; }
-.title h3 { top: 500px; }
+
+nav a{
+  background-color: orange;
+  display: block;
+  font-size: 1.2em;
+  width: 100%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 4px 0;
+}
+
+nav a:hover{
+  width: 110%;
+}
+
+/******* What is Bitcoin Step ********/
+#what-is-bitcoin {
+  position: relative;
+  left: 10em;
+  top: -3em;
+}
+.bitcoin-long {
+  position: absolute;
+  left: 400px;
+  top: 150px;
+}
+
+#author {
+  position: absolute;
+  top: 400px;
+  left: 600px;
+  text-align: right;
+}
+
+/*********** Cryptocurrency Step ******/
+#cryptocurrency {
+  position: relative;
+  right: 0em;
+  transition: all 2s;
+  text-shadow: 7px 7px 7px #999;
+}
+
+.past #cryptocurrency {
+  right: 1em;
+  font-size: 5em;
+  transition: all 2s;
+}
+.coin {
+  position: absolute;
+  z-index:-1;
+  opacity: 0.7;
+}
+.bitcoin {left: 180px; top: 180px;}
+.ethereum{left: -40%; top: 40%;}
+.zcash{left: 600px; top: 400px;}
+.monero{left: -20%; top: -5%;}
+.bitcoin-cash{left: 80%; top: 10%;}
+.litecoin{left: 5%; top: 75%;}
+
+/********** Overview Step **********/
+
+/********** Timeline Step ***********/
+#timeline h1 {
+  text-align: left;
+}
+
+#line {
+  height: 2em;
+  width: 2000px;
+  display: flex;
+  flex-directoin: row;
+  background: linear-gradient(to right, rgba(30,87,153,1) 45%,rgba(179,111,188,1) 55%);
+}
+
+.year {
+  border-left: solid white 3px;
+  color: white;
+  margin-left: 0;
+  margin: auto;
+}
+
+.timeline-step{
+  /* Push the text down so timeline shows */
+  position: relative;
+  top: 500px;
+  /* Alternative
+  padding-top: 200px;*/
+}
+
+.timeline-step-high {
+  bottom: 800px;
+}
+
+/********* Demo Steps **************/
+#demo h1{
+  font-size: 2.5em;
+  text-align: left;
+  margin-bottom: 0;
+  paddin: 0;
+}
+
+#demo a{padding: 0;}
+.jaxx-logo {
+  position: absolute;
+  right: 250px;
+  top: 40px;
+  width: 5em;
+}
+
+.jaxx-step {
+  width: 400px;
+}
+
+
+
+
+
+
 
 
 
@@ -235,34 +285,12 @@ body.impress-mouse-timeout div#impress-toolbar {
 body.impress-mouse-timeout {
     cursor: none;
 }
-/* Help popup plugin */
-.impress-enabled #impress-help {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
-    color: #EEEEEE;
-    font-size: 80%;
-    position: fixed;
-    left: 2em;
-    bottom: 2em;
-    width: 24em;
-    border-radius: 1em;
-    padding: 1em;
-    text-align: center;
-    z-index: 100;
-    font-family: serif;
-}
-.impress-enabled #impress-help td {
-    padding-left: 1em;
-    padding-right: 1em;
-}
-
 
 
 /*
    Disable mouse clicks / focus for body
 */
-.impress-enabled                          { pointer-events: none }
 .impress-enabled #impress                 { pointer-events: auto }
-.impress-enabled #impress-toolbar         { pointer-events: auto }
 
 
 /*
@@ -275,5 +303,5 @@ body.impress-mouse-timeout {
 }
 .present .fade-present {
     opacity: 1.0;
-    transition: 2s;
+    transition: 2s
 }
