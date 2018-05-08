@@ -1,6 +1,11 @@
+/* Colors
+#F17120 Jaxx Orange
+#2EA869 Jaxx Green
+#C0C0C0 Background gray
+
+*/
 /***** Fonts *****/
 
-/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic|Cutive+Mono); */
 @import url(fonts.css);
 
 
@@ -33,7 +38,7 @@ body {
     font-family: serif;
     min-height: 740px;
 
-    background: #fff;
+    background: radial-gradient(rgb(245, 245, 245), rgb(190, 190, 190));
 }
 
 .step {
@@ -45,7 +50,7 @@ body {
 
     box-sizing: border-box;
 
-    color: rgb(72, 72, 72);
+    color: rgb(65, 65, 65);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
     font-family: serif;
     font-size: 30px;
@@ -70,21 +75,16 @@ body {
 h1,
 h2,
 h3 {
-    margin-bottom: 0.5em;
     text-align: center;
+    margin: 0;
 }
 
 p {
-    margin: 0.7em;
+    margin: 0.3em;
 }
 
 li {
-    margin: 0.2em;
-}
-
-/* Inline code, no Highlight.js */
-code {
-    font-family: "Cutive mono","Courier New", monospace;
+    margin: 0.1em;
 }
 
 
@@ -134,33 +134,45 @@ img {
 
 
 
+.slide {
+  background: rgba(150, 150, 150, .2);
+  border-radius: 25px;
+}
+
 
 
 
 /***** Floating nav ********/
+.impress-on-what-is-bitcoin nav,
+.impress-on-what-is-cryptocurrency nav {
+  opacity: 0;
+}
+
 nav {
-  z-index: 99;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  width: 250px;
+  height: 200px;
+
   position: fixed;
-  left: 0;
-  top: 20px;
+  left: -15px;;
+  top: -25px;
+  transform: scale(2);
+
+  opacity: .9;
+  transition: opacity 2s;
+  z-index: 9;
+
+  border-bottom-right-radius: 100px;
   background: rgba(150, 150, 150, .8);
-  padding-right: 8px;
 }
 
-nav a{
-  background-color: orange;
-  display: block;
-  font-size: 1.2em;
-  width: 100%;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  margin: 4px 0;
+.cloud-word{
+  position: absolute;
+  transition: all 1s;
+  color: black;
 }
-
-nav a:hover{
-  width: 110%;
+.cloud-word:hover{
+  color: #F17120;
+  transition: all .3s;
 }
 
 /******* What is Bitcoin Step ********/
@@ -178,21 +190,29 @@ nav a:hover{
 #author {
   position: absolute;
   top: 400px;
-  left: 600px;
+  left: 550px;
   text-align: right;
 }
 
 /*********** Cryptocurrency Step ******/
+#what-is {
+  position: relative;
+  top: 200px;
+  right: 1em;
+}
 #cryptocurrency {
   position: relative;
-  right: 0em;
-  transition: all 2s;
+  right: 1.5em;
+  top: 1.1em;
   text-shadow: 7px 7px 7px #999;
+  font-size: 5em;
+  transition: all 2s;
 }
 
-.past #cryptocurrency {
+.impress-on-what-is-cryptocurrency #cryptocurrency {
   right: 1em;
-  font-size: 5em;
+  top: 2.7em;
+  font-size: 2em;
   transition: all 2s;
 }
 .coin {
@@ -200,11 +220,15 @@ nav a:hover{
   z-index:-1;
   opacity: 0.7;
 }
-.bitcoin {left: 180px; top: 180px;}
+.past .coin {
+  opacity: 0.4;
+  transition: all 2s;
+}
+.bitcoin {left: 40%; top: -10%;}
 .ethereum{left: -40%; top: 40%;}
 .zcash{left: 600px; top: 400px;}
 .monero{left: -20%; top: -5%;}
-.bitcoin-cash{left: 80%; top: 10%;}
+.bitcoin-cash{left: 80%; top: 15%;}
 .litecoin{left: 5%; top: 75%;}
 
 /********** Overview Step **********/
@@ -219,12 +243,12 @@ nav a:hover{
   width: 2000px;
   display: flex;
   flex-directoin: row;
-  background: linear-gradient(to right, rgba(30,87,153,1) 45%,rgba(179,111,188,1) 55%);
+  background: linear-gradient(to right, rgba(46, 168, 105, 1) 45%,rgba(241, 114, 32, 1) 55%);;
 }
 
 .year {
-  border-left: solid white 3px;
-  color: white;
+  border-left: solid #D0D0D0 3px;
+  color: #D0D0D0;
   margin-left: 0;
   margin: auto;
 }
@@ -243,30 +267,57 @@ nav a:hover{
 
 /********* Demo Steps **************/
 #demo h1{
-  font-size: 2.5em;
-  text-align: left;
-  margin-bottom: 0;
-  paddin: 0;
+  position: relative;
+  right: 2em;
 }
 
-#demo a{padding: 0;}
+#demo p {
+  position: absolute;
+  top: .5em;
+  right: 7em;
+}
+
 .jaxx-logo {
   position: absolute;
-  right: 250px;
-  top: 40px;
-  width: 5em;
+  right: 0px;
+  bottom: -10px;
+  width: 6em;
 }
 
 .jaxx-step {
-  width: 400px;
+  width: 350px;
+  height: 600px;
 }
 
 
+/****** Altcoins Step ********/
+#altcoin-columns {
+  display: flex;
+  flex-directoin: row;
+  text-align: center;
+}
 
+#altcoins img {
+  width: 200px;
+}
 
+/****** Whitepaper Step ********/
 
+/****** Adoption Step ********/
 
+/****** Smart Contracts Step ********/
 
+/****** Philosophy Step ********/
+
+/****** Tokenomics Step ********/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-gap: 10px;*/
+  vertical-align: middle;
+}
+
+/****** About Me Step ********/
 
 
 /***** Plugins ******/

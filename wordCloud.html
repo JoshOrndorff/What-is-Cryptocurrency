@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Generated With https://github.com/timdream/wordcloud2.js
+
+options = {
+   list: [
+     ['Overview', 22],
+     ['Altcoins', 14],
+     ['Smart Contracts', 13],
+     ['Demo', 13],
+     ['About Me', 10],
+     ['Philosophy', 12],
+     ['Timeline', 13],
+     ['Adoption', 12],
+     ['Tokenomics', 12],
+     ['Whitepaper', 13],
+     ['Start', 8]
+   ],
+   color: null, // to not hardcode color. I'll CSS it
+   gridsize: 300,
+}
+WordCloud(document.getElementById('cloud'), options);
+
+-->
+<html>
+<body>
+<div id="cloud">
+  <span class="cloud-word" style="font-size: 22px;  left: 96px; top: 139.2px; width: 104px; height: 22px; transform: rotate(0deg);">Overview</span>
+  <span class="cloud-word" style="font-size: 14px;  left: 120px; top: 122.4px; width: 56px; height: 14px; transform: rotate(0deg);">Altcoins</span>
+  <span class="cloud-word" style="font-size: 13px;  left: 39.5px; top: 126.8px; width: 105px; height: 13px; transform: rotate(-49.0656deg);">Smart&nbsp;Contracts</span>
+  <span class="cloud-word" style="font-size: 13px;  left: 144.5px; top: 158.8px; width: 39px; height: 13px; transform: rotate(0deg);">Demo</span>
+  <span class="cloud-word" style="font-size: 10px;  left: 92.5px; top: 164px; width: 47px; height: 10px; transform: rotate(0deg);">About&nbsp;Me</span>
+  <span class="cloud-word" style="font-size: 12px;  left: 112px; top: 183.2px; width: 64px; height: 12px; transform: rotate(-8.5302deg);">Philosophy</span>
+  <span class="cloud-word" style="font-size: 13px;  left: 183.5px; top: 126.8px; width: 57px; height: 13px; transform: rotate(0deg);">Timeline</span>
+  <span class="cloud-word" style="font-size: 12px;  left: 157px; top: 111.2px; width: 54px; height: 12px; transform: rotate(0deg);">Adoption</span>
+  <span class="cloud-word" style="font-size: 12px;  left: 153.5px; top: 179.2px; width: 69px; height: 12px; transform: rotate(-43.7448deg);">Tokenomics</span>
+  <span class="cloud-word" style="font-size: 13px;  left: 70.5px; top: 198.8px; width: 75px; height: 13px; transform: rotate(0deg);">Whitepaper</span>
+  <span class="cloud-word" style="font-size: 8px;  left: 138.5px; top: 136.8px; width: 19px; height: 8px; transform: rotate(0deg);">Start</span>
+</div>
+<style>
+  #cloud{
+    position: fixed;
+    left:0;
+    top: 0;
+    transform: scale(2);
+  }
+  .cloud-word{
+    position: absolute;
+    transition: all 1s;
+    color: bloack;
+  }
+  .cloud-word:hover{
+    color: red;
+    transition: all .3s;
+  }
+</style>
+</body>
+</html>
