@@ -1,0 +1,195 @@
+#timeline h1 {
+  text-align: left;
+}
+
+#line {
+  height: 1.5em;
+  width: 2000px;
+  display: flex;
+  flex-directoin: row;
+  background: linear-gradient(to right, rgba(46, 168, 105, 1) 50%,rgba(241, 114, 32, 1) 66%);;
+}
+
+.year {
+  border-left: solid #D0D0D0 3px;
+  color: #D0D0D0;
+  margin-left: 0;
+  margin: auto;
+}
+
+.timeline-step {
+  background: rgb(200, 200, 200);
+  text-align: center;
+}
+
+.timeline-step img{
+  max-width: 100%;
+  height: 70%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#peave {
+  font-size: .7em;
+}
+
+/*.impress-on-timeline-depression #timeline-depression,*/
+.impress-on-timeline-depression #timeline-depeg,
+.impress-on-timeline-depression #timeline-abandon,
+.impress-on-timeline-depression #timeline-2008,
+.impress-on-timeline-depression #timeline-whitepaper,
+.impress-on-timeline-depression #timeline-genesis,
+.impress-on-timeline-depression #timeline-altcoins,
+.impress-on-timeline-depression #timeline-silkroad,
+.impress-on-timeline-depression #timeline-mtgox,
+.impress-on-timeline-depression #timeline-ethereum,
+.impress-on-timeline-depression #timeline-bch,
+
+/*.impress-on-timeline-depeg #timeline-depression,
+.impress-on-timeline-depeg #timeline-depeg,*/
+.impress-on-timeline-depeg #timeline-abandon,
+.impress-on-timeline-depeg #timeline-2008,
+.impress-on-timeline-depeg #timeline-whitepaper,
+.impress-on-timeline-depeg #timeline-genesis,
+.impress-on-timeline-depeg #timeline-altcoins,
+.impress-on-timeline-depeg #timeline-silkroad,
+.impress-on-timeline-depeg #timeline-mtgox,
+.impress-on-timeline-depeg #timeline-ethereum,
+.impress-on-timeline-depeg #timeline-bch,
+
+/*.impress-on-timeline-abandon #timeline-depression,
+.impress-on-timeline-abandon #timeline-depeg,
+.impress-on-timeline-abandon #timeline-abandon,*/
+.impress-on-timeline-abandon #timeline-2008,
+.impress-on-timeline-abandon #timeline-whitepaper,
+.impress-on-timeline-abandon #timeline-genesis,
+.impress-on-timeline-abandon #timeline-altcoins,
+.impress-on-timeline-abandon #timeline-silkroad,
+.impress-on-timeline-abandon #timeline-mtgox,
+.impress-on-timeline-abandon #timeline-ethereum,
+.impress-on-timeline-abandon #timeline-bch,
+
+/*.impress-on-timeline-2008 #timeline-depression,
+.impress-on-timeline-2008 #timeline-depeg,
+.impress-on-timeline-2008 #timeline-abandon,
+.impress-on-timeline-2008 #timeline-2008,*/
+.impress-on-timeline-2008 #timeline-whitepaper,
+.impress-on-timeline-2008 #timeline-genesis,
+.impress-on-timeline-2008 #timeline-altcoins,
+.impress-on-timeline-2008 #timeline-silkroad,
+.impress-on-timeline-2008 #timeline-mtgox,
+.impress-on-timeline-2008 #timeline-ethereum,
+.impress-on-timeline-2008 #timeline-bch,
+
+/*.impress-on-timeline-whitepaper #timeline-depression,
+.impress-on-timeline-whitepaper #timeline-depeg,
+.impress-on-timeline-whitepaper #timeline-abandon,
+.impress-on-timeline-whitepaper #timeline-2008,
+.impress-on-timeline-whitepaper #timeline-whitepaper,*/
+.impress-on-timeline-whitepaper #timeline-genesis,
+.impress-on-timeline-whitepaper #timeline-altcoins,
+.impress-on-timeline-whitepaper #timeline-silkroad,
+.impress-on-timeline-whitepaper #timeline-mtgox,
+.impress-on-timeline-whitepaper #timeline-ethereum,
+.impress-on-timeline-whitepaper #timeline-bch,
+
+/*.impress-on-timeline-genesis #timeline-depression,
+.impress-on-timeline-genesis #timeline-depeg,
+.impress-on-timeline-genesis #timeline-abandon,
+.impress-on-timeline-genesis #timeline-2008,
+.impress-on-timeline-genesis #timeline-whitepaper,
+.impress-on-timeline-genesis #timeline-genesis,*/
+.impress-on-timeline-genesis #timeline-altcoins,
+.impress-on-timeline-genesis #timeline-silkroad,
+.impress-on-timeline-genesis #timeline-mtgox,
+.impress-on-timeline-genesis #timeline-ethereum,
+.impress-on-timeline-genesis #timeline-bch,
+
+/*.impress-on-timeline-whitepaper #timeline-depression,
+.impress-on-timeline-whitepaper #timeline-depeg,
+.impress-on-timeline-whitepaper #timeline-abandon,
+.impress-on-timeline-whitepaper #timeline-2008,
+.impress-on-timeline-whitepaper #timeline-whitepaper,
+.impress-on-timeline-whitepaper #timeline-genesis,*/
+.impress-on-timeline-whitepaper #timeline-altcoins,
+.impress-on-timeline-whitepaper #timeline-silkroad,
+.impress-on-timeline-whitepaper #timeline-mtgox,
+.impress-on-timeline-whitepaper #timeline-ethereum,
+.impress-on-timeline-whitepaper #timeline-bch,
+
+/*.impress-on-timeline-altcoins #timeline-depression,
+.impress-on-timeline-altcoins #timeline-depeg,
+.impress-on-timeline-altcoins #timeline-abandon,
+.impress-on-timeline-altcoins #timeline-2008,
+.impress-on-timeline-altcoins #timeline-whitepaper,
+.impress-on-timeline-altcoins #timeline-genesis,
+.impress-on-timeline-altcoins #timeline-altcoins,*/
+.impress-on-timeline-altcoins #timeline-silkroad,
+.impress-on-timeline-altcoins #timeline-mtgox,
+.impress-on-timeline-altcoins #timeline-ethereum,
+.impress-on-timeline-altcoins #timeline-bch,
+
+/*.impress-on-timeline-silkroad #timeline-depression,
+.impress-on-timeline-silkroad #timeline-depeg,
+.impress-on-timeline-silkroad #timeline-abandon,
+.impress-on-timeline-silkroad #timeline-2008,
+.impress-on-timeline-silkroad #timeline-whitepaper,
+.impress-on-timeline-silkroad #timeline-genesis,
+.impress-on-timeline-silkroad #timeline-altcoins,
+.impress-on-timeline-silkroad #timeline-silkroad,*/
+.impress-on-timeline-silkroad #timeline-mtgox,
+.impress-on-timeline-silkroad #timeline-ethereum,
+.impress-on-timeline-silkroad #timeline-bch,
+
+/*.impress-on-timeline-mtgox #timeline-depression,
+.impress-on-timeline-mtgox #timeline-depeg,
+.impress-on-timeline-mtgox #timeline-abandon,
+.impress-on-timeline-mtgox #timeline-2008,
+.impress-on-timeline-mtgox #timeline-whitepaper,
+.impress-on-timeline-mtgox #timeline-genesis,
+.impress-on-timeline-mtgox #timeline-altcoins,
+.impress-on-timeline-mtgox #timeline-silkroad,
+.impress-on-timeline-mtgox #timeline-mtgox,*/
+.impress-on-timeline-mtgox #timeline-ethereum,
+.impress-on-timeline-mtgox #timeline-bch,
+
+/*.impress-on-timeline-ethereum #timeline-depression,
+.impress-on-timeline-ethereum #timeline-depeg,
+.impress-on-timeline-ethereum #timeline-abandon,
+.impress-on-timeline-ethereum #timeline-2008,
+.impress-on-timeline-ethereum #timeline-whitepaper,
+.impress-on-timeline-ethereum #timeline-genesis,
+.impress-on-timeline-ethereum #timeline-altcoins,
+.impress-on-timeline-ethereum #timeline-silkroad,
+.impress-on-timeline-ethereum #timeline-mtgox,
+.impress-on-timeline-ethereum #timeline-ethereum,*/
+.impress-on-timeline-ethereum #timeline-bch {
+  opacity: 0;
+}
+
+/* Hide other blocks when viewing timeline so it doesn't get rendered in background */
+.impress-on-timeline-depression #about,
+.impress-on-timeline-depeg #about,
+.impress-on-timeline-abandon #about,
+.impress-on-timeline-2008 #about,
+.impress-on-timeline-whitepaper #about,
+.impress-on-timeline-genesis #about,
+.impress-on-timeline-altcoins #about,
+.impress-on-timeline-silkroad #about,
+.impress-on-timeline-mtgox #about,
+.impress-on-timeline-ethereum #about,
+.impress-on-timeline-bch #about,
+.impress-on-timeline-depression  #adoption,
+.impress-on-timeline-depeg  #adoption,
+.impress-on-timeline-abandon  #adoption,
+.impress-on-timeline-2008  #adoption,
+.impress-on-timeline-whitepaper  #adoption,
+.impress-on-timeline-genesis  #adoption,
+.impress-on-timeline-altcoins  #adoption,
+.impress-on-timeline-silkroad  #adoption,
+.impress-on-timeline-mtgox  #adoption,
+.impress-on-timeline-ethereum  #adoption,
+.impress-on-timeline-bch  #adoption {
+  display: none;
+}

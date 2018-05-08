@@ -132,6 +132,7 @@ img {
 .slide {
   background: rgba(150, 150, 150, .2);
   border-radius: 25px;
+  transition: all 2s;
 }
 
 
@@ -231,30 +232,13 @@ nav {
 /********** Overview Step **********/
 
 /********** Timeline Step ***********/
-#timeline h1 {
-  text-align: left;
-}
-
-#line {
-  height: 1.5em;
-  width: 2000px;
-  display: flex;
-  flex-directoin: row;
-  background: linear-gradient(to right, rgba(46, 168, 105, 1) 50%,rgba(241, 114, 32, 1) 66%);;
-}
-
-.year {
-  border-left: solid #D0D0D0 3px;
-  color: #D0D0D0;
-  margin-left: 0;
-  margin: auto;
-}
-
-.timeline-step{
-}
+/* Moves to timeline.css */
 
 /********* Demo Steps **************/
-#demo h1{
+#demo {
+  height: 800px;
+}
+#demo h1 {
   position: relative;
   right: 2em;
 }
