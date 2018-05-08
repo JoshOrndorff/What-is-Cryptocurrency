@@ -274,24 +274,58 @@ nav {
   text-align: center;
 }
 
-#altcoins img {
+#altcoin-columns img {
   width: 200px;
 }
 
 /****** Whitepaper Step ********/
 
 /****** Adoption Step ********/
+#adoption {
+  height: 800px;
+}
+#adoption-columns {
+  display: flex;
+  flex-directoin: row;
+  text-align: center;
+}
+
+#adoption-columns img {
+  width: 240px;
+  max-height: 200px;
+}
+
+#ether-usage {
+
+}
 
 /****** Smart Contracts Step ********/
 
 /****** Philosophy Step ********/
+#phil-bg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+
+  margin: 0;
+  padding: 0;
+
+  border-bottom-right-radius: inherit;
+}
 
 /****** Tokenomics Step ********/
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /*grid-gap: 10px;*/
+}
+
+.grid img {
+  margin: 0;
+  padding: 4px;
   vertical-align: middle;
+  max-width: 95%;
 }
 
 /****** About Me Step ********/
