@@ -3,11 +3,6 @@
 #2EA869 Jaxx Green
 #C0C0C0 Background gray
 
-*/
-/***** Fonts *****/
-
-@import url(fonts.css);
-
 
 /***** Fallback message *****/
 
@@ -151,6 +146,8 @@ img {
 nav {
   width: 250px;
   height: 200px;
+  max-width: 25%;
+  max-height: 20%;
 
   position: fixed;
   left: -15px;;
@@ -239,11 +236,11 @@ nav {
 }
 
 #line {
-  height: 2em;
+  height: 1.5em;
   width: 2000px;
   display: flex;
   flex-directoin: row;
-  background: linear-gradient(to right, rgba(46, 168, 105, 1) 45%,rgba(241, 114, 32, 1) 55%);;
+  background: linear-gradient(to right, rgba(46, 168, 105, 1) 50%,rgba(241, 114, 32, 1) 66%);;
 }
 
 .year {
@@ -254,15 +251,6 @@ nav {
 }
 
 .timeline-step{
-  /* Push the text down so timeline shows */
-  position: relative;
-  top: 500px;
-  /* Alternative
-  padding-top: 200px;*/
-}
-
-.timeline-step-high {
-  bottom: 800px;
 }
 
 /********* Demo Steps **************/
@@ -285,8 +273,13 @@ nav {
 }
 
 .jaxx-step {
-  width: 350px;
+  width: 320px;
   height: 600px;
+}
+
+.jaxx-step img {
+  margin: 0;
+  width: 100%;
 }
 
 
