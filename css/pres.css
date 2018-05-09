@@ -279,38 +279,49 @@ nav {
 }
 
 /****** Whitepaper Step ********/
+#whitepaper-top {
+  position: relative;
+  width: 100%;
+  height: 40%;
+}
+#lock {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#whitepaper-top ul {
+  position: absolute;
+  top: 35px;
+  left: 330px;
+}
+#transaction {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: right;
+}
+
+#blockchain {
+  margin-top: 70px;
+  width: 90%;
+}
+
 
 /****** Adoption Step ********/
-#adoption {
-  height: 850px;
-}
-#adoption-grid {
-  display: grid;
-  grid-template-columns: 1fr 15fr 1fr 15fr;
-}
-
-#adoption h2 {
-  transform: rotate(-90deg);
-  height: 1em;
-  margin-top: 100px;
-}
-
-#what     {grid-column: 1; grid-row: 1/2;}
-#popejohn {grid-column: 2; grid-row: 1; margin: 0;}
-#btm      {grid-column: 2; grid-row: 2; margin: 0;}
-
-#how        {grid-column: 3; grid-row: 1/2;}
-#qrcheckout {grid-column: 4; grid-row: 1; margin: 0;}
-#bitpay     {grid-column: 4; grid-row: 2; margin: 0;}
-
-#who        {grid-column: 1;   grid-row: 3; margin-top: 100px;}
-#ether-usage{grid-column: 2/4; grid-row: 3;
-  height: 50%;
-  width: auto;
-  margin-left: 10%;
-}
+/* Moves to adoption.css */
 
 /****** Smart Contracts Step ********/
+#kitties {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  border-bottom-right-radius: inherit;
+}
 
 /****** Philosophy Step ********/
 .bottom-right {
@@ -333,7 +344,8 @@ nav {
 }
 
 .grid img {
-  margin: 0;
+  margin-left: 0;
+  margin-right:0;
   padding: 4px;
   vertical-align: middle;
   max-width: 95%;

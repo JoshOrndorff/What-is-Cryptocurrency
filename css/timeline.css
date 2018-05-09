@@ -7,7 +7,8 @@
   width: 2000px;
   display: flex;
   flex-directoin: row;
-  background: linear-gradient(to right, rgba(46, 168, 105, 1) 50%,rgba(241, 114, 32, 1) 66%);;
+  background: linear-gradient(to right, #777777 50%, #F3843F 66%);
+  border-radius: 3px;
 }
 
 .year {

@@ -1,0 +1,128 @@
+/* Fuck grid. Let's just get this done. */
+
+/*
+
+<div id="adoption-grid">
+  <h2  id="what">What?</h2>
+  <img id="popejohn" src="images/popejohn.jpg" />
+  <img id="btm" src="images/btm.jpg" />
+  <h2  id="how">How?</h2>
+  <img id="qrcheckout" src="images/qrcheckout.png" />
+  <img id="bitpay" src="images/bitpay.png" />
+  <h2 id="who">Who?</h2>
+  <img id="ether-usage" src="images/ether-usage.png" />
+</div>
+
+
+#adoption {
+  height: 850px;
+}
+#adoption-grid {
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr 15fr;
+}
+
+#adoption h2 {
+  transform: rotate(-90deg);
+  height: 1em;
+  margin-top: 100px;
+}
+
+#what     {grid-column: 1; grid-row: 1/2;}
+#popejohn {grid-column: 2; grid-row: 1; margin: 0;}
+#btm      {grid-column: 2; grid-row: 2; margin: 0;}
+
+#how        {grid-column: 3; grid-row: 1/2;}
+#qrcheckout {grid-column: 4; grid-row: 1; margin: 0;}
+#bitpay     {grid-column: 4; grid-row: 2; margin: 0;}
+
+#who        {grid-column: 1;   grid-row: 3; margin-top: 100px;}
+#ether-usage{grid-column: 2/4; grid-row: 3;
+  height: 50%;
+  width: auto;
+  margin-left: 10%;
+}
+*/
+
+#adoption {
+  height: 850px;
+}
+
+.adoption-sub {
+  position: absolute;
+  border: 2px solid #aaaaaa;
+  border-radius: 5px;
+}
+
+#what-div {
+  top: 12%;
+  left: 2%;
+  width: 47%;
+  height: 56%;
+}
+
+#how-div {
+  top: 12%;
+  left: 51%;
+  width: 47%;
+  height: 56%;
+}
+
+#who-div {
+  top: 70%;
+  left: 2%;
+  width: 96%;
+  height: 27%;
+}
+
+/* words */
+
+#what, #how, #who {
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+#what {
+  top: 11%;
+  left: -15%;
+}
+
+#how {
+  top: 8%;
+  left: -12%;
+}
+
+#who {
+  top: 20%;
+  left: -6%;
+}
+
+/* images */
+#popejohn {
+  position: absolute;
+  right: 0;
+}
+#btm {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+}
+
+#qrcheckout{
+  position: absolute;
+  right: 0;
+  height: 43%;
+}
+#bitpay{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 43%;
+}
+
+#ether-usage{
+  margin: 0 0 0 20%;
+  height: 100%;
+  width: auto;
+}

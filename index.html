@@ -9,6 +9,7 @@
     <meta name="author" content="Joshy Orndorff" />
     <link href="css/pres.css" rel="stylesheet" />
     <link href="css/timeline.css" rel="stylesheet" />
+    <link href="css/adoption.css" rel="stylesheet" />
 
 </head>
 
@@ -165,7 +166,6 @@
 
 <div id="timeline-bch" class="step slide timeline-step" data-rotate-y="44" data-scale="3">
   <h1>2017 Bitcoin Cash Fork</h1>
-  <p>Now there are two bitcoins</p>
   <img src="images/bch-fork.png" />
 </div>
 
@@ -173,7 +173,7 @@
 <!--
     Demo step
 -->
-<div id="demo" class="step slide " data-x="-5000" data-y="7000" data-scale="6">
+<div id="demo" class="step slide " data-x="-3500" data-y="7000" data-scale="6">
   <h1>Demo</h1>
   <img src="images/jaxx.png" alt="jaxx logo" class="jaxx-logo" />
     <p>(<a href="jaxx.io" target="_blank">
@@ -248,9 +248,15 @@
 -->
 <div id="whitepaper" class="step slide" data-x="10500" data-y="0" data-rotate="6" data-rotate-x="-9" data-scale="5">
   <h1>Whitepaper</h1>
-  <img src="images/lock-marked.png" />
-  <img src="images/transaction.png" />
-  <img src="images/proof-of-work.png" />
+  <div id="whitepaper-top">
+    <img id="lock" src="images/lock-marked.png" />
+    <ul>
+      <li>Owner: right</li>
+      <li>Anyone: left</li>
+    </ul>
+    <img id="transaction" src="images/transaction.png" />
+  </div>
+  <img id="blockchain" src="images/proof-of-work.png" />
 </div>
 
 <!--
@@ -258,13 +264,17 @@
 -->
 <div id="adoption" class="step slide" data-x="11000" data-y="10000" data-rotate="10" data-rotate-x="-6" data-scale="6">
   <h1>Adoption</h1>
-  <div id="adoption-grid">
+  <div id="what-div" class="adoption-sub">
     <h2  id="what">What?</h2>
     <img id="popejohn" src="images/popejohn.jpg" />
-    <img id="btm" src="images/btm.jpg" />
+    <img id="btm" src="images/btm.png" />
+  </div>
+  <div id="how-div" class="adoption-sub">
     <h2  id="how">How?</h2>
     <img id="qrcheckout" src="images/qrcheckout.png" />
     <img id="bitpay" src="images/bitpay.png" />
+  </div>
+  <div id="who-div" class="adoption-sub">
     <h2 id="who">Who?</h2>
     <img id="ether-usage" src="images/ether-usage.png" />
   </div>
@@ -273,16 +283,18 @@
 <!--
     Smart Contracts step
 -->
-<div id="contracts" class="step slide  markdown" data-x="-12000" data-y="7000" data-rotate="-5" data-rotate-x="5" data-scale="6">
-# Smart Contracts
-## Games
-* Cryptokitties
-* Casinos
-* ENS
-* Exchanges (0x)
-* diplomas
-* voting
-* Prism
+<div id="contracts" class="step slide" data-x="-12000" data-y="7000" data-rotate="-5" data-rotate-x="5" data-scale="6">
+  <h1>Smart Contracts</h1>
+  <img id="kitties" src="images/kitties.png" />
+  <ul>
+    <li>Cryptokitties</li>
+    <li>Trustless Casinos</li>
+    <li>ENS</li>
+    <li>Exchanges (0x)</li>
+    <li>Diplomas</li>
+    <li>Voting</li>
+    <li>Diversified Investing</li>
+  </ul>
 </div>
 
 <!--
