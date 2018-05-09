@@ -302,7 +302,7 @@ nav {
 /****** Smart Contracts Step ********/
 
 /****** Philosophy Step ********/
-#phil-bg {
+.bottom-right {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -329,7 +329,7 @@ nav {
 }
 
 /****** About Me Step ********/
-
+/* Shares with Philosophy */
 
 /***** Plugins ******/
 .impress-enabled div#impress-toolbar {
