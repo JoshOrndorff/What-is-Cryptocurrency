@@ -282,21 +282,32 @@ nav {
 
 /****** Adoption Step ********/
 #adoption {
-  height: 800px;
+  height: 850px;
 }
-#adoption-columns {
-  display: flex;
-  flex-directoin: row;
-  text-align: center;
-}
-
-#adoption-columns img {
-  width: 240px;
-  max-height: 200px;
+#adoption-grid {
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr 15fr;
 }
 
-#ether-usage {
+#adoption h2 {
+  transform: rotate(-90deg);
+  height: 1em;
+  margin-top: 100px;
+}
 
+#what     {grid-column: 1; grid-row: 1/2;}
+#popejohn {grid-column: 2; grid-row: 1; margin: 0;}
+#btm      {grid-column: 2; grid-row: 2; margin: 0;}
+
+#how        {grid-column: 3; grid-row: 1/2;}
+#qrcheckout {grid-column: 4; grid-row: 1; margin: 0;}
+#bitpay     {grid-column: 4; grid-row: 2; margin: 0;}
+
+#who        {grid-column: 1;   grid-row: 3; margin-top: 100px;}
+#ether-usage{grid-column: 2/4; grid-row: 3;
+  height: 50%;
+  width: auto;
+  margin-left: 10%;
 }
 
 /****** Smart Contracts Step ********/
