@@ -311,6 +311,15 @@ nav {
 /* Moves to adoption.css */
 
 /****** Smart Contracts Step ********/
+#contracts {
+  height: 600px;
+}
+#sc-cols {
+  margin-top: 60px;
+  margin-left: 40px;
+  column-count: 2;
+  column-gap: 10px;
+}
 #kitties {
   position: absolute;
   bottom: 0;
