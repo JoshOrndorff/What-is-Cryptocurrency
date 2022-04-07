@@ -2,7 +2,7 @@
 
 This interactive visual aid is made with [impress.js](https://github.com/henrikingo/impress.js.git) to support a talk that I originally gave on 09 May 2018 at the Vermilion, OH rotary club.
 
-Navigate using the arrow keys, or the worn cloud that appears on the third slide. A working version is hosted at [https://joshorndorff.github.io/What-is-Cryptocurrency/](https://joshorndorff.github.io/What-is-Cryptocurrency/)
+Navigate using the arrow keys, or the word cloud that appears on the third slide. A working version is hosted at [https://joshorndorff.github.io/What-is-Cryptocurrency/](https://joshorndorff.github.io/What-is-Cryptocurrency/)
 
 ## How to use
 Clone the repo including the impress.js submodule
